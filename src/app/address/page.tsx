@@ -17,9 +17,9 @@ export default function Page() {
 
     useEffect(() => {
       const defaultData = [
-        { id: 1, name: 'Alpha', number: '1234' },
-        { id: 2, name: 'Buri', number: '5678' },
-        { id: 3, name: 'Campinas', number: '9101' }
+        { id: 1, name: 'Olympus Mons', number: '6958' },
+        { id: 2, name: 'Valles Marineris', number: '5678' },
+        { id: 3, name: 'Utopia Planitia', number: '9101' }
       ];
   
       const storedData = localStorage.getItem('data');
