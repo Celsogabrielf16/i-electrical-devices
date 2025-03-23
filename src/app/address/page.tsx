@@ -51,7 +51,7 @@ export default function Page() {
       };
 
     return (
-        <main className="flex flex-col gap-[32px] row-start-2 items-center pt-23 px-10 pb-10 md:pb-32">
+        <main className="flex flex-col relative w-screen overflow-x-hidden  gap-[32px] row-start-2 items-center pt-23 px-10 pb-10 md:pb-32">
             <Image src="/assets/mars.png" alt="Mars" priority className="absolute w-25 sm:w-30 md:w-50 lg:w-70 xl:w-90 2xl:w-130 -left-15 md:-left-20 lg:-left-40 xl:-left-50 top-20" width={600} height={600} quality={100}/>
             <Image src="/assets/earth.png" alt="Earth" priority className="absolute w-25 sm:w-30 md:w-50 lg:w-70 xl:w-90 2xl:w-130 -right-15 md:-right-20 lg:-right-40 xl:-right-50 top-60 sm:top-120 lg:top-100 xl:top-60" width={600} height={600} quality={100}/>
             <div className="flex flex-col xl:flex-row w-min items-center text-center gap-10 xl:gap-20 mt-10 xl:mt-32">
@@ -68,7 +68,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col mt-6 sm:mt-10 md:mt-32 text-center gap-4 md:gap-8">
                 <h1 className="sm:text-xl md:text-3xl w-200 mx-auto">Endereços Cadastrados</h1>
-                <p className="w-70 md:w-130 mx-auto text-xs sm:text-sm md:text-base/7 text-gray-600">Confira abaixo os endereços interplanetários já cadastrados para o delivery de dispositivos eletrônicos. A entrega será feita diretamente no local de armazenamento em Marte!</p>
+                <p className="w-70 md:w-130 lg:w-200 mx-auto text-xs sm:text-sm md:text-base/7 text-gray-600">Confira abaixo os endereços interplanetários já cadastrados para o delivery de dispositivos eletrônicos. A entrega será feita diretamente no local de armazenamento em Marte!</p>
             </div>
             <div className="flex flex-col md:mt-12 gap-4 md:gap-8">
                 {data.map((item, index) => (
