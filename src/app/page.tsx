@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="grid grid-row-[1fr_1fr] gap-[32px] row-start-2 items-center pt-23 px-32 pb-32">
-      <Image src="/assets/mars.png" alt="Mars" className="absolute -left-50 top-60" width={600} height={600} quality={100}/>
-      <Image src="/assets/earth.png" alt="Earth" className="absolute -right-50 top-20" width={600} height={600} quality={100}/>
+      <Image src="/assets/mars.png" alt="Mars" priority className="absolute -left-50 top-60" width={600} height={600} quality={100}/>
+      <Image src="/assets/earth.png" alt="Earth" priority className="absolute -right-50 top-20" width={600} height={600} quality={100}/>
       <div className="flex flex-col mt-32 text-center gap-8">
           <p className="text-sm">Transportamos dispositivos eletrônicos entre planetas com eficiência e segurança.</p>
           <h1 className="text-5xl w-200 mx-auto">Conectamos Marte e Terra com entregas rápidas e seguras.</h1>
